@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.container svg {
+    width: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .icon_cart {
+    position: relative;
+}
+
+header .icon_cart span {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: -25px;px;
+    top: 25px;
+}
+
+.products .item img {
+    width: 55%;
+
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.products .item {
+    background-color: beige;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.product .item h2 {
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.products .item .price {
+    font-size: small;
+    letter-spacing: 5px;
+}
+
+.products .item button {
+    background-color: black;
+    color: beige;
+    border-radius: 15px;
+    border: none;
+    margin-top: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.cartTab {
+    display: grid;
+    background-color: darkgrey;
+    width: 370px;
+    color: whitesmoke;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    grid-template-rows: 70px 1fr 70px;
+}
+
+.cartTab h1 {
+    margin: 20px;
+    font-weight: 300;
+}
+
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button {
+    background-color: beige;
+    border: none;
+    cursor: pointer;
+}
+
+.cartTab .btn button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cartTab .btn .close {
+    background-color: whitesmoke;
+}
+
+.cartTab .listCart .item img {
+    width: 100%;
+}
+
+.cartTab .listCart .item {
+    display: grid;
+    grid-template-columns: 70px 115px 70px 70px;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.listCart .quantity span:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: white;
+}
+
+
+
+
+
