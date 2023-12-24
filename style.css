@@ -84,9 +84,16 @@ header .icon_cart span {
     color: whitesmoke;
     position: fixed;
     top:0;
-    right: 0;
+    right: -400px;
     bottom: 0;
     grid-template-rows: 70px 1fr 70px;
+}
+
+body .showCart .cartTab {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
 }
 
 .cartTab h1 {
@@ -142,6 +149,14 @@ header .icon_cart span {
 .listCart .quantity span:nth-child(2) {
     background-color: transparent;
     color: white;
+}
+
+.listCart {
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+    width: 0;
 }
 
 
